@@ -1,0 +1,17 @@
+server:
+  port: 6990
+spring:
+  application:
+    name: oracleconne
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:服务名
+    username: root
+    password: 123456
+    driver-class-name: oracle.jdbc.OracleDriver
+    max-idle: 10
+    min-wait: 10000
+    min-idle: 5
+    initial-size: 5
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.itcodes.myhub.oracleconne.pojo
